@@ -7,11 +7,12 @@ module.exports = {
       comment: "Features cannot import from other features",
     },
     {
-      name: "no-services-to-components",
-      from: { path: "^src/features/.*/services/" },
+      name: "no-server-to-components",
+      from: { path: "^src/features/.*/server/" },
       to: { path: "^src/features/.*/components/" },
-      comment: "Services cannot import from components",
+      comment: "Server cannot import from components",
     },
+
     {
       name: "no-shared-to-features",
       from: { path: "^src/shared/" },
